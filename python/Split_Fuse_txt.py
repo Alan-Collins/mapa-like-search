@@ -45,28 +45,28 @@ def Split_txt(file, piece_size):
 
 
 
-def fuse_txt (dir, split):
+def Fuse_txt (dir, split, name):
 
     """
     Given a directory full of files, fuses them together and outputs a single file called "combined.txt"
     Adds whatever arg is given for split at the points where the files were fused.
     :param dir: directory containing text files
     :param split: something to add at the fusion points e.g. '/n'
+    :param name: unique identifier to add to output file name. final file will be name_combined.txt
     :return: returns nothing. Makes a big text file.
     """
 
     bigfile = ''
     for file in os.listdir(dir):
-        if file.endswith('.txt') and file != "combined.txt":
-            with open(os.path.join(dir, file)) as f:
-                for line in f.readlines():
-                    bigfile += line
-                f.close()
-            bigfile += split
+        if file != name + "_combined.txt":
+            if file.endswith('.txt'):
+                with open(os.path.join(dir, file)) as f:
+                    for line in f.readlines():
+                        bigfile += line
+                    f.close()
+                bigfile += split
 
-    with open(os.path.join(dir, "combined.txt"), 'w') as f:
+    with open(os.path.join(dir, name + "_combined.txt"), 'w') as f:
         f.writelines(bigfile)
         f.close()
 
-
-fuse_txt("/Users/alancollins/GitHub/File_Management/lapG_ACC_html_summaries", "")
