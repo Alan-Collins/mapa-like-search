@@ -32,5 +32,4 @@ def get_summaries(directory, name):
                 out.writelines(text)
                 out.close()
 
-get_summaries("/Users/alancollins/GitHub/File_Management/test", "test_lapG_ACC_html_summaries")
 
