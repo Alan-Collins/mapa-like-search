@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!DOCTYPE eSummaryResult PUBLIC "-//NLM//DTD esummary v1 20041029//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20041029/esummary-v1.dtd">
+<eSummaryResult>
+
+<DocSum>
+	<Id>218757213</Id>
+	<Item Name="Caption" Type="String">ACL08112</Item>
+	<Item Name="Title" Type="String">transglutaminase family protein cysteine peptidase BTLCP [Desulfovibrio vulgaris str. 'Miyazaki F']</Item>
+	<Item Name="Extra" Type="String">gi|218757213|gnl|jgi|DvMF_1158|gb|ACL08112.1|[218757213]</Item>
+	<Item Name="Gi" Type="Integer">218757213</Item>
+	<Item Name="CreateDate" Type="String">2008/12/24</Item>
+	<Item Name="UpdateDate" Type="String">2013/12/11</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">883</Item>
+	<Item Name="Length" Type="Integer">430</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">ACL08112.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>120563247</Id>
+	<Item Name="Caption" Type="String">ABM28991</Item>
+	<Item Name="Title" Type="String">conserved hypothetical protein [Desulfovibrio vulgaris DP4]</Item>
+	<Item Name="Extra" Type="String">gi|120563247|gnl|jgi|Dvul_1975|gb|ABM28991.1|[120563247]</Item>
+	<Item Name="Gi" Type="Integer">120563247</Item>
+	<Item Name="CreateDate" Type="String">2007/01/03</Item>
+	<Item Name="UpdateDate" Type="String">2014/01/28</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">391774</Item>
+	<Item Name="Length" Type="Integer">406</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">ABM28991.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>46579432</Id>
+	<Item Name="Caption" Type="String">YP_010240</Item>
+	<Item Name="Title" Type="String">hypothetical protein DVU1019 [Desulfovibrio vulgaris str. Hildenborough]</Item>
+	<Item Name="Extra" Type="String">gi|46579432|ref|YP_010240.1|[46579432]</Item>
+	<Item Name="Gi" Type="Integer">46579432</Item>
+	<Item Name="CreateDate" Type="String">2004/04/27</Item>
+	<Item Name="UpdateDate" Type="String">2016/08/28</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">882</Item>
+	<Item Name="Length" Type="Integer">406</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">YP_010240.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>46448846</Id>
+	<Item Name="Caption" Type="String">AAS95499</Item>
+	<Item Name="Title" Type="String">conserved domain protein [Desulfovibrio vulgaris str. Hildenborough]</Item>
+	<Item Name="Extra" Type="String">gi|46448846|gb|AAS95499.1||gnl|tigr|DVU1019[46448846]</Item>
+	<Item Name="Gi" Type="Integer">46448846</Item>
+	<Item Name="CreateDate" Type="String">2004/04/21</Item>
+	<Item Name="UpdateDate" Type="String">2014/01/31</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">882</Item>
+	<Item Name="Length" Type="Integer">406</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">AAS95499.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1425984445</Id>
+	<Item Name="Caption" Type="String">WP_112982114</Item>
+	<Item Name="Title" Type="String">hypothetical protein [Rhizobiales bacterium]</Item>
+	<Item Name="Extra" Type="String">gi|1425984445|ref|WP_112982114.1|[1425984445]</Item>
+	<Item Name="Gi" Type="Integer">1425984445</Item>
+	<Item Name="CreateDate" Type="String">2018/07/13</Item>
+	<Item Name="UpdateDate" Type="String">2018/07/13</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">1909294</Item>
+	<Item Name="Length" Type="Integer">327</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_112982114.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1424143528</Id>
+	<Item Name="Caption" Type="String">WP_112431853</Item>
+	<Item Name="Title" Type="String">hypothetical protein [Rhizobiales bacterium]</Item>
+	<Item Name="Extra" Type="String">gi|1424143528|ref|WP_112431853.1|[1424143528]</Item>
+	<Item Name="Gi" Type="Integer">1424143528</Item>
+	<Item Name="CreateDate" Type="String">2018/07/13</Item>
+	<Item Name="UpdateDate" Type="String">2018/07/13</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">1909294</Item>
+	<Item Name="Length" Type="Integer">327</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_112431853.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1358093565</Id>
+	<Item Name="Caption" Type="String">WP_105439771</Item>
+	<Item Name="Title" Type="String">hypothetical protein [Neorhizobium sp. T25_13]</Item>
+	<Item Name="Extra" Type="String">gi|1358093565|ref|WP_105439771.1|[1358093565]</Item>
+	<Item Name="Gi" Type="Integer">1358093565</Item>
+	<Item Name="CreateDate" Type="String">2018/03/12</Item>
+	<Item Name="UpdateDate" Type="String">2018/03/12</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">2093830</Item>
+	<Item Name="Length" Type="Integer">265</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_105439771.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1358078491</Id>
+	<Item Name="Caption" Type="String">WP_105428669</Item>
+	<Item Name="Title" Type="String">hypothetical protein [Neorhizobium sp. T6_25]</Item>
+	<Item Name="Extra" Type="String">gi|1358078491|ref|WP_105428669.1|[1358078491]</Item>
+	<Item Name="Gi" Type="Integer">1358078491</Item>
+	<Item Name="CreateDate" Type="String">2018/03/12</Item>
+	<Item Name="UpdateDate" Type="String">2018/03/12</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">2093833</Item>
+	<Item Name="Length" Type="Integer">265</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_105428669.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1358074602</Id>
+	<Item Name="Caption" Type="String">WP_105425560</Item>
+	<Item Name="Title" Type="String">hypothetical protein [Neorhizobium tomejilense]</Item>
+	<Item Name="Extra" Type="String">gi|1358074602|ref|WP_105425560.1|[1358074602]</Item>
+	<Item Name="Gi" Type="Integer">1358074602</Item>
+	<Item Name="CreateDate" Type="String">2018/03/12</Item>
+	<Item Name="UpdateDate" Type="String">2018/09/19</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">2093828</Item>
+	<Item Name="Length" Type="Integer">265</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_105425560.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1358068693</Id>
+	<Item Name="Caption" Type="String">WP_105420146</Item>
+	<Item Name="Title" Type="String">hypothetical protein [Neorhizobium sp. T25_27]</Item>
+	<Item Name="Extra" Type="String">gi|1358068693|ref|WP_105420146.1|[1358068693]</Item>
+	<Item Name="Gi" Type="Integer">1358068693</Item>
+	<Item Name="CreateDate" Type="String">2018/03/12</Item>
+	<Item Name="UpdateDate" Type="String">2018/03/12</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">2093831</Item>
+	<Item Name="Length" Type="Integer">265</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_105420146.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1358051648</Id>
+	<Item Name="Caption" Type="String">WP_105403184</Item>
+	<Item Name="Title" Type="String">hypothetical protein [Neorhizobium sp. T7_12]</Item>
+	<Item Name="Extra" Type="String">gi|1358051648|ref|WP_105403184.1|[1358051648]</Item>
+	<Item Name="Gi" Type="Integer">1358051648</Item>
+	<Item Name="CreateDate" Type="String">2018/03/12</Item>
+	<Item Name="UpdateDate" Type="String">2018/03/12</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">2093832</Item>
+	<Item Name="Length" Type="Integer">265</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_105403184.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1309114663</Id>
+	<Item Name="Caption" Type="String">PKP86359</Item>
+	<Item Name="Title" Type="String">hypothetical protein CVT78_13860 [Alphaproteobacteria bacterium HGW-Alphaproteobacteria-17]</Item>
+	<Item Name="Extra" Type="String">gi|1309114663|gb|PKP86359.1||gnl|WGS:PHEI|CVT78_13860[1309114663]</Item>
+	<Item Name="Gi" Type="Integer">1309114663</Item>
+	<Item Name="CreateDate" Type="String">2017/12/13</Item>
+	<Item Name="UpdateDate" Type="String">2017/12/13</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">2013663</Item>
+	<Item Name="Length" Type="Integer">375</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">PKP86359.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1242703629</Id>
+	<Item Name="Caption" Type="String">WP_095825821</Item>
+	<Item Name="Title" Type="String">transglutaminase [Mesorhizobium sp. WSM3882]</Item>
+	<Item Name="Extra" Type="String">gi|1242703629|ref|WP_095825821.1|[1242703629]</Item>
+	<Item Name="Gi" Type="Integer">1242703629</Item>
+	<Item Name="CreateDate" Type="String">2017/09/14</Item>
+	<Item Name="UpdateDate" Type="String">2017/09/14</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">2029407</Item>
+	<Item Name="Length" Type="Integer">333</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_095825821.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1241679545</Id>
+	<Item Name="Caption" Type="String">PBB39551</Item>
+	<Item Name="Title" Type="String">transglutaminase [Mesorhizobium sp. WSM3868]</Item>
+	<Item Name="Extra" Type="String">gi|1241679545|gb|PBB39551.1||gnl|WGS:NSGB|CK221_01640[1241679545]</Item>
+	<Item Name="Gi" Type="Integer">1241679545</Item>
+	<Item Name="CreateDate" Type="String">2017/09/12</Item>
+	<Item Name="UpdateDate" Type="String">2017/09/12</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">2029405</Item>
+	<Item Name="Length" Type="Integer">333</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">PBB39551.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1241669960</Id>
+	<Item Name="Caption" Type="String">PBB30018</Item>
+	<Item Name="Title" Type="String">transglutaminase [Mesorhizobium sp. WSM3882]</Item>
+	<Item Name="Extra" Type="String">gi|1241669960|gb|PBB30018.1||gnl|WGS:NSFY|CK214_23135[1241669960]</Item>
+	<Item Name="Gi" Type="Integer">1241669960</Item>
+	<Item Name="CreateDate" Type="String">2017/09/12</Item>
+	<Item Name="UpdateDate" Type="String">2017/09/12</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">2029407</Item>
+	<Item Name="Length" Type="Integer">333</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">PBB30018.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1239506456</Id>
+	<Item Name="Caption" Type="String">WP_095485884</Item>
+	<Item Name="Title" Type="String">transglutaminase [Mesorhizobium mediterraneum]</Item>
+	<Item Name="Extra" Type="String">gi|1239506456|ref|WP_095485884.1|[1239506456]</Item>
+	<Item Name="Gi" Type="Integer">1239506456</Item>
+	<Item Name="CreateDate" Type="String">2017/09/02</Item>
+	<Item Name="UpdateDate" Type="String">2017/09/02</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">43617</Item>
+	<Item Name="Length" Type="Integer">317</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_095485884.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1239031320</Id>
+	<Item Name="Caption" Type="String">PAQ00731</Item>
+	<Item Name="Title" Type="String">transglutaminase [Mesorhizobium mediterraneum]</Item>
+	<Item Name="Extra" Type="String">gi|1239031320|gb|PAQ00731.1||gnl|WGS:NPKI|CIT25_17830[1239031320]</Item>
+	<Item Name="Gi" Type="Integer">1239031320</Item>
+	<Item Name="CreateDate" Type="String">2017/08/31</Item>
+	<Item Name="UpdateDate" Type="String">2017/08/31</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">43617</Item>
+	<Item Name="Length" Type="Integer">317</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">PAQ00731.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1222425824</Id>
+	<Item Name="Caption" Type="String">WP_090477472</Item>
+	<Item Name="Title" Type="String">hypothetical protein [Erythrobacter nanhaisediminis]</Item>
+	<Item Name="Extra" Type="String">gi|1222425824|ref|WP_090477472.1|[1222425824]</Item>
+	<Item Name="Gi" Type="Integer">1222425824</Item>
+	<Item Name="CreateDate" Type="String">2017/07/29</Item>
+	<Item Name="UpdateDate" Type="String">2017/07/29</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">604088</Item>
+	<Item Name="Length" Type="Integer">331</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_090477472.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1181513338</Id>
+	<Item Name="Caption" Type="String">WP_084805891</Item>
+	<Item Name="Title" Type="String">hypothetical protein [Bradyrhizobium sp. NAS80.1]</Item>
+	<Item Name="Extra" Type="String">gi|1181513338|ref|WP_084805891.1|[1181513338]</Item>
+	<Item Name="Gi" Type="Integer">1181513338</Item>
+	<Item Name="CreateDate" Type="String">2017/04/17</Item>
+	<Item Name="UpdateDate" Type="String">2017/04/17</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">1680159</Item>
+	<Item Name="Length" Type="Integer">251</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_084805891.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1181387455</Id>
+	<Item Name="Caption" Type="String">WP_084683010</Item>
+	<Item Name="Title" Type="String">hypothetical protein [Rhizobium vignae]</Item>
+	<Item Name="Extra" Type="String">gi|1181387455|ref|WP_084683010.1|[1181387455]</Item>
+	<Item Name="Gi" Type="Integer">1181387455</Item>
+	<Item Name="CreateDate" Type="String">2017/04/17</Item>
+	<Item Name="UpdateDate" Type="String">2017/04/17</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">690585</Item>
+	<Item Name="Length" Type="Integer">265</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_084683010.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1180678845</Id>
+	<Item Name="Caption" Type="String">WP_084164025</Item>
+	<Item Name="Title" Type="String">hypothetical protein [Pararheinheimera texasensis]</Item>
+	<Item Name="Extra" Type="String">gi|1180678845|ref|WP_084164025.1|[1180678845]</Item>
+	<Item Name="Gi" Type="Integer">1180678845</Item>
+	<Item Name="CreateDate" Type="String">2017/04/17</Item>
+	<Item Name="UpdateDate" Type="String">2017/04/17</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">306205</Item>
+	<Item Name="Length" Type="Integer">230</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_084164025.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1177364713</Id>
+	<Item Name="Caption" Type="String">WP_082657871</Item>
+	<Item Name="Title" Type="String">MULTISPECIES: hypothetical protein [Sphingopyxis]</Item>
+	<Item Name="Extra" Type="String">gi|1177364713|ref|WP_082657871.1|[1177364713]</Item>
+	<Item Name="Gi" Type="Integer">1177364713</Item>
+	<Item Name="CreateDate" Type="String">2017/04/11</Item>
+	<Item Name="UpdateDate" Type="String">2017/04/13</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">165697</Item>
+	<Item Name="Length" Type="Integer">382</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_082657871.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1176726544</Id>
+	<Item Name="Caption" Type="String">WP_082549855</Item>
+	<Item Name="Title" Type="String">hypothetical protein [Mesorhizobium sp. Root157]</Item>
+	<Item Name="Extra" Type="String">gi|1176726544|ref|WP_082549855.1|[1176726544]</Item>
+	<Item Name="Gi" Type="Integer">1176726544</Item>
+	<Item Name="CreateDate" Type="String">2017/04/11</Item>
+	<Item Name="UpdateDate" Type="String">2017/04/11</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">1736477</Item>
+	<Item Name="Length" Type="Integer">246</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_082549855.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1172797496</Id>
+	<Item Name="Caption" Type="String">WP_080955672</Item>
+	<Item Name="Title" Type="String">hypothetical protein [Neorhizobium galegae]</Item>
+	<Item Name="Extra" Type="String">gi|1172797496|ref|WP_080955672.1|[1172797496]</Item>
+	<Item Name="Gi" Type="Integer">1172797496</Item>
+	<Item Name="CreateDate" Type="String">2017/04/03</Item>
+	<Item Name="UpdateDate" Type="String">2017/04/03</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">399</Item>
+	<Item Name="Length" Type="Integer">265</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_080955672.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1172796819</Id>
+	<Item Name="Caption" Type="String">WP_080955101</Item>
+	<Item Name="Title" Type="String">hypothetical protein [Neorhizobium galegae]</Item>
+	<Item Name="Extra" Type="String">gi|1172796819|ref|WP_080955101.1|[1172796819]</Item>
+	<Item Name="Gi" Type="Integer">1172796819</Item>
+	<Item Name="CreateDate" Type="String">2017/04/03</Item>
+	<Item Name="UpdateDate" Type="String">2017/04/03</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">399</Item>
+	<Item Name="Length" Type="Integer">265</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_080955101.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1172792650</Id>
+	<Item Name="Caption" Type="String">WP_080951111</Item>
+	<Item Name="Title" Type="String">hypothetical protein [Neorhizobium galegae]</Item>
+	<Item Name="Extra" Type="String">gi|1172792650|ref|WP_080951111.1|[1172792650]</Item>
+	<Item Name="Gi" Type="Integer">1172792650</Item>
+	<Item Name="CreateDate" Type="String">2017/04/03</Item>
+	<Item Name="UpdateDate" Type="String">2017/04/03</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">399</Item>
+	<Item Name="Length" Type="Integer">265</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_080951111.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1120640208</Id>
+	<Item Name="Caption" Type="String">OKO86780</Item>
+	<Item Name="Title" Type="String">hypothetical protein AC629_15920 [Bradyrhizobium sp. NAS80.1]</Item>
+	<Item Name="Extra" Type="String">gi|1120640208|gb|OKO86780.1||gnl|WGS:LGHL|AC629_15920[1120640208]</Item>
+	<Item Name="Gi" Type="Integer">1120640208</Item>
+	<Item Name="CreateDate" Type="String">2016/12/19</Item>
+	<Item Name="UpdateDate" Type="String">2016/12/19</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">1680159</Item>
+	<Item Name="Length" Type="Integer">251</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">OKO86780.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1113519189</Id>
+	<Item Name="Caption" Type="String">OJX79731</Item>
+	<Item Name="Title" Type="String">transglutaminase [Mesorhizobium sp. 65-26]</Item>
+	<Item Name="Extra" Type="String">gi|1113519189|gb|OJX79731.1||gnl|WGS:MKVL|BGO93_11085[1113519189]</Item>
+	<Item Name="Gi" Type="Integer">1113519189</Item>
+	<Item Name="CreateDate" Type="String">2016/12/09</Item>
+	<Item Name="UpdateDate" Type="String">2016/12/09</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">1895781</Item>
+	<Item Name="Length" Type="Integer">313</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">OJX79731.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1098119252</Id>
+	<Item Name="Caption" Type="String">SFQ31684</Item>
+	<Item Name="Title" Type="String">transglutaminase-like cysteine proteinase BTLCP [Nitratireductor indicus]</Item>
+	<Item Name="Extra" Type="String">gi|1098119252|emb|SFQ31684.1||gnl|WGS:FOXZ|SFQ31684[1098119252]</Item>
+	<Item Name="Gi" Type="Integer">1098119252</Item>
+	<Item Name="CreateDate" Type="String">2016/10/31</Item>
+	<Item Name="UpdateDate" Type="String">2016/10/31</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">721133</Item>
+	<Item Name="Length" Type="Integer">313</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">SFQ31684.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1097151298</Id>
+	<Item Name="Caption" Type="String">SFO93174</Item>
+	<Item Name="Title" Type="String">Predicted transglutaminase-like cysteine proteinase [Erythrobacter nanhaisediminis]</Item>
+	<Item Name="Extra" Type="String">gi|1097151298|emb|SFO93174.1||gnl|WGS:FOWZ|SFO93174[1097151298]</Item>
+	<Item Name="Gi" Type="Integer">1097151298</Item>
+	<Item Name="CreateDate" Type="String">2016/10/31</Item>
+	<Item Name="UpdateDate" Type="String">2016/10/31</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">604088</Item>
+	<Item Name="Length" Type="Integer">331</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">SFO93174.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1085512703</Id>
+	<Item Name="Caption" Type="String">OGW72592</Item>
+	<Item Name="Title" Type="String">hypothetical protein A2Y02_01505 [Omnitrophica bacterium GWA2_52_12]</Item>
+	<Item Name="Extra" Type="String">gi|1085512703|gb|OGW72592.1||gnl|WGS:MHFB|A2Y02_01505[1085512703]</Item>
+	<Item Name="Gi" Type="Integer">1085512703</Item>
+	<Item Name="CreateDate" Type="String">2016/10/20</Item>
+	<Item Name="UpdateDate" Type="String">2016/10/20</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">1801816</Item>
+	<Item Name="Length" Type="Integer">175</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">OGW72592.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1055324372</Id>
+	<Item Name="Caption" Type="String">WP_066989335</Item>
+	<Item Name="Title" Type="String">MULTISPECIES: transglutaminase [Mesorhizobium]</Item>
+	<Item Name="Extra" Type="String">gi|1055324372|ref|WP_066989335.1|[1055324372]</Item>
+	<Item Name="Gi" Type="Integer">1055324372</Item>
+	<Item Name="CreateDate" Type="String">2016/08/18</Item>
+	<Item Name="UpdateDate" Type="String">2017/09/15</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">68287</Item>
+	<Item Name="Length" Type="Integer">333</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_066989335.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1054789042</Id>
+	<Item Name="Caption" Type="String">WP_066552238</Item>
+	<Item Name="Title" Type="String">hypothetical protein [Croceicoccus sp. H4]</Item>
+	<Item Name="Extra" Type="String">gi|1054789042|ref|WP_066552238.1|[1054789042]</Item>
+	<Item Name="Gi" Type="Integer">1054789042</Item>
+	<Item Name="CreateDate" Type="String">2016/08/18</Item>
+	<Item Name="UpdateDate" Type="String">2016/08/18</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">1783232</Item>
+	<Item Name="Length" Type="Integer">320</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_066552238.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>1039247689</Id>
+	<Item Name="Caption" Type="String">OBQ87965</Item>
+	<Item Name="Title" Type="String">transglutaminase [Mesorhizobium sp. WSM3873]</Item>
+	<Item Name="Extra" Type="String">gi|1039247689|gb|OBQ87965.1||gnl|WGS:LYTM|A9K71_01355[1039247689]</Item>
+	<Item Name="Gi" Type="Integer">1039247689</Item>
+	<Item Name="CreateDate" Type="String">2016/06/20</Item>
+	<Item Name="UpdateDate" Type="String">2016/06/20</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">1854056</Item>
+	<Item Name="Length" Type="Integer">333</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">OBQ87965.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>962394331</Id>
+	<Item Name="Caption" Type="String">KTE76726</Item>
+	<Item Name="Title" Type="String">hypothetical protein ATE63_19295 [Sphingopyxis sp. H067]</Item>
+	<Item Name="Extra" Type="String">gi|962394331|gb|KTE76726.1||gnl|WGS:LNSE|ATE63_19295[962394331]</Item>
+	<Item Name="Gi" Type="Integer">962394331</Item>
+	<Item Name="CreateDate" Type="String">2015/12/15</Item>
+	<Item Name="UpdateDate" Type="String">2015/12/15</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">1759077</Item>
+	<Item Name="Length" Type="Integer">371</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">KTE76726.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>962386833</Id>
+	<Item Name="Caption" Type="String">KTE69354</Item>
+	<Item Name="Title" Type="String">hypothetical protein ATE60_17455 [Sphingopyxis sp. H081]</Item>
+	<Item Name="Extra" Type="String">gi|962386833|gb|KTE69354.1||gnl|WGS:LNSH|ATE60_17455[962386833]</Item>
+	<Item Name="Gi" Type="Integer">962386833</Item>
+	<Item Name="CreateDate" Type="String">2015/12/15</Item>
+	<Item Name="UpdateDate" Type="String">2015/12/15</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">1759080</Item>
+	<Item Name="Length" Type="Integer">371</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">KTE69354.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>962379533</Id>
+	<Item Name="Caption" Type="String">KTE62133</Item>
+	<Item Name="Title" Type="String">hypothetical protein ATE65_17195 [Sphingopyxis sp. H100]</Item>
+	<Item Name="Extra" Type="String">gi|962379533|gb|KTE62133.1||gnl|WGS:LNSI|ATE65_17195[962379533]</Item>
+	<Item Name="Gi" Type="Integer">962379533</Item>
+	<Item Name="CreateDate" Type="String">2015/12/15</Item>
+	<Item Name="UpdateDate" Type="String">2015/12/15</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">1759081</Item>
+	<Item Name="Length" Type="Integer">371</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">KTE62133.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>962374422</Id>
+	<Item Name="Caption" Type="String">KTE57131</Item>
+	<Item Name="Title" Type="String">hypothetical protein ATE66_18570 [Sphingopyxis sp. H107]</Item>
+	<Item Name="Extra" Type="String">gi|962374422|gb|KTE57131.1||gnl|WGS:LNSJ|ATE66_18570[962374422]</Item>
+	<Item Name="Gi" Type="Integer">962374422</Item>
+	<Item Name="CreateDate" Type="String">2015/12/15</Item>
+	<Item Name="UpdateDate" Type="String">2015/12/15</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">1759082</Item>
+	<Item Name="Length" Type="Integer">371</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">KTE57131.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>962367951</Id>
+	<Item Name="Caption" Type="String">KTE50698</Item>
+	<Item Name="Title" Type="String">hypothetical protein ATE64_15275 [Sphingopyxis sp. H073]</Item>
+	<Item Name="Extra" Type="String">gi|962367951|gb|KTE50698.1||gnl|WGS:LNSG|ATE64_15275[962367951]</Item>
+	<Item Name="Gi" Type="Integer">962367951</Item>
+	<Item Name="CreateDate" Type="String">2015/12/15</Item>
+	<Item Name="UpdateDate" Type="String">2015/12/15</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">1759079</Item>
+	<Item Name="Length" Type="Integer">371</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">KTE50698.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>962366869</Id>
+	<Item Name="Caption" Type="String">KTE49635</Item>
+	<Item Name="Title" Type="String">hypothetical protein ATE69_19945 [Sphingopyxis sp. H071]</Item>
+	<Item Name="Extra" Type="String">gi|962366869|gb|KTE49635.1||gnl|WGS:LNSF|ATE69_19945[962366869]</Item>
+	<Item Name="Gi" Type="Integer">962366869</Item>
+	<Item Name="CreateDate" Type="String">2015/12/15</Item>
+	<Item Name="UpdateDate" Type="String">2015/12/15</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">1759078</Item>
+	<Item Name="Length" Type="Integer">371</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">KTE49635.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>962341639</Id>
+	<Item Name="Caption" Type="String">KTE24675</Item>
+	<Item Name="Title" Type="String">hypothetical protein ATE61_12210 [Sphingopyxis sp. H057]</Item>
+	<Item Name="Extra" Type="String">gi|962341639|gb|KTE24675.1||gnl|WGS:LNSD|ATE61_12210[962341639]</Item>
+	<Item Name="Gi" Type="Integer">962341639</Item>
+	<Item Name="CreateDate" Type="String">2015/12/15</Item>
+	<Item Name="UpdateDate" Type="String">2015/12/15</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">1759076</Item>
+	<Item Name="Length" Type="Integer">371</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">KTE24675.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>945946448</Id>
+	<Item Name="Caption" Type="String">KQZ99594</Item>
+	<Item Name="Title" Type="String">hypothetical protein ASD64_14790 [Mesorhizobium sp. Root157]</Item>
+	<Item Name="Extra" Type="String">gi|945946448|gb|KQZ99594.1||gnl|WGS:LMGJ|ASD64_14790[945946448]</Item>
+	<Item Name="Gi" Type="Integer">945946448</Item>
+	<Item Name="CreateDate" Type="String">2015/11/02</Item>
+	<Item Name="UpdateDate" Type="String">2015/11/02</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">1736477</Item>
+	<Item Name="Length" Type="Integer">265</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">KQZ99594.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>931438230</Id>
+	<Item Name="Caption" Type="String">KPK23309</Item>
+	<Item Name="Title" Type="String">hypothetical protein AMJ70_03845, partial [Dehalococcoidia bacterium SG8_51_3]</Item>
+	<Item Name="Extra" Type="String">gi|931438230|gb|KPK23309.1||gnl|WGS:LJTX|AMJ70_03845[931438230]</Item>
+	<Item Name="Gi" Type="Integer">931438230</Item>
+	<Item Name="CreateDate" Type="String">2015/09/30</Item>
+	<Item Name="UpdateDate" Type="String">2015/09/30</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">1703394</Item>
+	<Item Name="Length" Type="Integer">308</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">KPK23309.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>919201208</Id>
+	<Item Name="Caption" Type="String">WP_052756709</Item>
+	<Item Name="Title" Type="String">hypothetical protein [Neorhizobium galegae]</Item>
+	<Item Name="Extra" Type="String">gi|919201208|ref|WP_052756709.1|[919201208]</Item>
+	<Item Name="Gi" Type="Integer">919201208</Item>
+	<Item Name="CreateDate" Type="String">2015/08/20</Item>
+	<Item Name="UpdateDate" Type="String">2015/08/20</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">399</Item>
+	<Item Name="Length" Type="Integer">265</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_052756709.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>917302780</Id>
+	<Item Name="Caption" Type="String">WP_051909492</Item>
+	<Item Name="Title" Type="String">hypothetical protein [Neorhizobium galegae]</Item>
+	<Item Name="Extra" Type="String">gi|917302780|ref|WP_051909492.1|[917302780]</Item>
+	<Item Name="Gi" Type="Integer">917302780</Item>
+	<Item Name="CreateDate" Type="String">2015/08/16</Item>
+	<Item Name="UpdateDate" Type="String">2015/08/16</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">399</Item>
+	<Item Name="Length" Type="Integer">265</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_051909492.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>917293125</Id>
+	<Item Name="Caption" Type="String">WP_051899837</Item>
+	<Item Name="Title" Type="String">hypothetical protein [Neorhizobium galegae]</Item>
+	<Item Name="Extra" Type="String">gi|917293125|ref|WP_051899837.1|[917293125]</Item>
+	<Item Name="Gi" Type="Integer">917293125</Item>
+	<Item Name="CreateDate" Type="String">2015/08/16</Item>
+	<Item Name="UpdateDate" Type="String">2015/08/16</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">399</Item>
+	<Item Name="Length" Type="Integer">296</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_051899837.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>817663308</Id>
+	<Item Name="Caption" Type="String">WP_046628663</Item>
+	<Item Name="Title" Type="String">hypothetical protein [Neorhizobium galegae]</Item>
+	<Item Name="Extra" Type="String">gi|817663308|ref|WP_046628663.1|[817663308]</Item>
+	<Item Name="Gi" Type="Integer">817663308</Item>
+	<Item Name="CreateDate" Type="String">2015/05/06</Item>
+	<Item Name="UpdateDate" Type="String">2015/05/06</Item>
+	<Item Name="Flags" Type="Integer">512</Item>
+	<Item Name="TaxId" Type="Integer">399</Item>
+	<Item Name="Length" Type="Integer">325</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">WP_046628663.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>816184674</Id>
+	<Item Name="Caption" Type="String">CDZ58487</Item>
+	<Item Name="Title" Type="String">Putative periplasmic protein [Neorhizobium galegae bv. orientalis]</Item>
+	<Item Name="Extra" Type="String">gi|816184674|emb|CDZ58487.1||gnl|WGS:CCRM|CDZ58487[816184674]</Item>
+	<Item Name="Gi" Type="Integer">816184674</Item>
+	<Item Name="CreateDate" Type="String">2015/04/29</Item>
+	<Item Name="UpdateDate" Type="String">2015/04/29</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">323655</Item>
+	<Item Name="Length" Type="Integer">325</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">CDZ58487.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>816169736</Id>
+	<Item Name="Caption" Type="String">CDZ46801</Item>
+	<Item Name="Title" Type="String">Putative periplasmic protein [Neorhizobium galegae bv. orientalis]</Item>
+	<Item Name="Extra" Type="String">gi|816169736|emb|CDZ46801.1||gnl|WGS:CCRJ|CDZ46801[816169736]</Item>
+	<Item Name="Gi" Type="Integer">816169736</Item>
+	<Item Name="CreateDate" Type="String">2015/04/29</Item>
+	<Item Name="UpdateDate" Type="String">2015/04/29</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">323655</Item>
+	<Item Name="Length" Type="Integer">325</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">CDZ46801.1</Item>
+</DocSum>
+
+<DocSum>
+	<Id>816164503</Id>
+	<Item Name="Caption" Type="String">CDZ25773</Item>
+	<Item Name="Title" Type="String">Putative periplasmic protein [Neorhizobium galegae bv. officinalis]</Item>
+	<Item Name="Extra" Type="String">gi|816164503|emb|CDZ25773.1||gnl|WGS:CCRG|CDZ25773[816164503]</Item>
+	<Item Name="Gi" Type="Integer">816164503</Item>
+	<Item Name="CreateDate" Type="String">2015/04/29</Item>
+	<Item Name="UpdateDate" Type="String">2015/04/29</Item>
+	<Item Name="Flags" Type="Integer">0</Item>
+	<Item Name="TaxId" Type="Integer">323656</Item>
+	<Item Name="Length" Type="Integer">325</Item>
+	<Item Name="Status" Type="String">live</Item>
+	<Item Name="ReplacedBy" Type="String"></Item>
+	<Item Name="Comment" Type="String"><![CDATA[  ]]></Item>
+	<Item Name="AccessionVersion" Type="String">CDZ25773.1</Item>
+</DocSum>
+</eSummaryResult>
