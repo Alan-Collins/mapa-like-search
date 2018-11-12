@@ -130,6 +130,9 @@ find.cleavage=function(anchor){ ##returns T or F to whateve AA string you feed i
 pSUM.lapD<-pNCBISummary("Data/LapD.txt")
 pSUM.lapG<-pNCBISummary("Data/LapG.txt")
 
+lapd.tax <- read.csv("Data/lapD.csv")
+lapg.tax <- read.csv("Data/lapG.csv")
+
 # 
 ##############################
 
@@ -141,7 +144,7 @@ length(lapGD.organisms)
 lapD.percent.overlap<-(length(lapGD.organisms)/lapD.organism.tally)*100 #How many LapD-encoding genomes also encode LapG? 96%
 #############################################################
 
-
+lapGD.taxid <- intersect(lapd.tax$Taxon_ID, lapg.tax$Taxon_ID)
 #######STEP 3 - Download Genome file#######S
 all.genomes<-read.csv("Data/ALL_genomes_proks.csv", stringsAsFactors = FALSE, header=TRUE) #file contains all bacterial genomes as of 10/30/2018
 
@@ -152,14 +155,33 @@ all.genomes<-read.csv("Data/ALL_genomes_proks.csv", stringsAsFactors = FALSE, he
 
 #############create dataframe containing all the lapD/G encoding species with subgroup and sequence info################
 
+tax.target.rows<-lapply(lapGD.taxid, function(x) which(all.genomes$TaxID==x))
+get.rows.tax<-sapply(tax.target.rows, function(x) x[1]) #returns only one value per 
+get.rows.tax<-na.omit(get.rows.tax)
+
 target.rows<-lapply(lapGD.organisms, function(x) which(all.genomes$X.Organism.Name==x))
 get.rows<-sapply(target.rows, function(x) x[1]) #returns only one value per 
 get.rows<-na.omit(get.rows)
 
-lapd.g.species.info<-data.frame(all.genomes[get.rows,c(1,7,18,21)]) #create dataset of only organisms and info of interest
-names(lapd.g.species.info)<-c("organism", "subgroup", "level", "RefSeq.FTP") #name cols
+grep.target.rows <- lapply(lapGD.organisms, function(x) grep( x, all.genomes$X.Organism.Name ))
+get.rows.grep<-sapply(grep.target.rows, function(x) x[1]) #returns only one value per 
+get.rows.grep<-na.omit(get.rows.grep)
 
-write.csv(lapd.g.species.info, "Output/lapDG_Species_info.csv")
+lapd.g.species.info.tax<-data.frame(all.genomes[get.rows.tax,c(1,2,6,18,21)])
+names(lapd.g.species.info.tax)<-c("organism", "TaxID", "subgroup", "level", "RefSeq.FTP")
+
+lapd.g.species.info<-data.frame(all.genomes[get.rows,c(1,2,6,18,21)]) #create dataset of only organisms and info of interest
+names(lapd.g.species.info)<-c("organism", "TaxID", "subgroup", "level", "RefSeq.FTP") #name cols
+
+lapd.g.species.info.grep<-data.frame(all.genomes[get.rows.grep,c(1,2,6,18,21)])
+names(lapd.g.species.info.grep)<-c("organism", "TaxID", "subgroup", "level", "RefSeq.FTP")
+
+write.csv(lapd.g.species.info.tax, "Output/lapDG_Species_info_tax.csv")
+
+write.csv(lapd.g.species.info.grep, "Output/lapDG_Species_info_grep.csv")
+
+
+#lapd.g.species.info.tax <- read.csv("Output/lapDG_Species_info_tax.csv")
 
 
 
@@ -172,10 +194,10 @@ write.csv(lapd.g.species.info, "Output/lapDG_Species_info.csv")
 # GCA_000466945.1
 
 
-tbl<-sapply(lapd.g.species.info$RefSeq.FTP, function(x) paste(s.url(x), "_feature_table.txt.gz", sep=""))
-prt<-sapply(lapd.g.species.info$RefSeq.FTP, function(x) paste(s.url(x), "_protein.faa.gz", sep=""))
-new.d<-data.frame(lapd.g.species.info,tbl,prt)
-write.csv(new.d,"Output/dg.genome.url.files.csv")
+tbl<-sapply(lapd.g.species.info.grep$RefSeq.FTP, function(x) paste(s.url(x), "_feature_table.txt.gz", sep=""))
+prt<-sapply(lapd.g.species.info.grep$RefSeq.FTP, function(x) paste(s.url(x), "_protein.faa.gz", sep=""))
+new.d<-data.frame(lapd.g.species.info.grep,tbl,prt)
+write.csv(new.d,"Output/dg.grep.genome.url.files.csv")
 
 
 
@@ -216,7 +238,7 @@ my.table<-data.frame(ACC=character(), pFUN=character(), SEQQ=character(), SIZE=n
 
 ptm <- proc.time() #for fun I timed this
 for (i in 1:length(faa.files)){
-#  limit.size = NULL
+  limit.size <- NULL
   closeAllConnections()
   species.name<-strsplit(faa.files[i], "_protein.faa.gz") #get species name
   species.name<-species.name[[1]][1]
@@ -227,6 +249,7 @@ for (i in 1:length(faa.files)){
   
   RTX.status<-lapply(f.proteins$protein.sequence, function(x) any.RTX(x)) #look through protein sequence column for proteins with RTX
   
+
   if (any(RTX.status==TRUE)==TRUE) { ##only interogate genomes with large RTX adhesins.
     putative.RTX<-which(RTX.status==TRUE)
     limit.size<-subset(f.proteins[putative.RTX,], protein.length>=1000)
@@ -238,25 +261,40 @@ for (i in 1:length(faa.files)){
   message("complete\n\n")
   
 }
-motif_status<-lapply(my.table$protein.sequence, function(x) find.cleavage(substr(x, 80,150))) ##search list of large RTX proteins for LapG cleavage site. Return T or F for putative cleavage site.
-new_my.table<-mutate(my.table, lapG=motif_status, loose.lapG =loose_motif_status, loosest.lapG = loosest_motif_status)
+motif_status<-lapply(my.table$protein.sequence, function(x) find.cleavage(substr(x, 70,150))) ##search list of large RTX proteins for LapG cleavage site. Return T or F for putative cleavage site.
+new_my.table<-mutate(my.table, lapG=motif_status)
+new_my.table$lapG <- as.character(new_my.table$lapG)
+
+setwd("/Users/AlanCollins/Github/mapa-like-search")
+
+new_my.table.unique <- new_my.table[!duplicated(new_my.table$accession),]
+
+
+write.csv(new_my.table.unique, "Output/All_largeRTX.csv")
+
 #write.xlsx2(new_my.table, "LapA-Like_V3.xlsx", append=TRUE, sheetName="All Large RTX")
 closeAllConnections()
 proc.time()-ptm #it takes a pretty long time
 substrates2<-subset(new_my.table[which(new_my.table$lapG==TRUE),1:5], stringsAsFactors=FALSE)
 no.substrates2<-subset(new_my.table[which(new_my.table$lapG==FALSE),])
+
+
+
+
 #write.xlsx2(substrates2, "LapA-Like_V3.xlsx", append=TRUE, sheetName="Substrates")
 #write.xlsx2(no.substrates2, "LapA-Like_V3.xlsx", append=TRUE, sheetName="Not_Substrates")
 
 ###########################
 
-#write.csv(substrates2, file = "all_lapG_substrates.csv")
 
 substrates.unique <- substrates2[!duplicated(substrates2$accession),]
+non.substrates.unique <- no.substrates2[!duplicated(no.substrates2$accession),]
 substrates.unique$organism <- as.character(substrates.unique$organism)
 row.names(substrates.unique) <- seq(length(row.names(substrates.unique)))
 protein.count <- data.frame(table(unlist(substrates.unique$organism)))
 
+write.csv(substrates.unique, "All_lapg_targets.csv")
+write.csv(no.substrates2, "all_non_lapg_targets.csv")
 
 multiples <- protein.count[protein.count$Var1[which(protein.count$Freq >1)],]
 
@@ -286,8 +324,14 @@ for ( i in 2: length(singles$Var1)){
   
 }
 
+pseudomonas.none <- non.substrates.unique[ grepl( "Pseudomonas" , non.substrates.unique$organism ), ]
 pseudomonas.multi <- multiple.rtx[ grepl( "Pseudomonas" , multiple.rtx$organism ), ]
 pseudomonas.single <- single.rtx[ grepl( "Pseudomonas" , single.rtx$organism ), ]
+pseudomonas.multi$number <- "Multi"
+pseudomonas.single$number <- "One"
+pseudomonas.none$number <- "0"
+
+pseudomonas.all <- rbind(pseudomonas.multi[,c(1,5,6)], pseudomonas.single[,c(1,5,6)], pseudomonas.none[,c(1,5,7)])
 
 multiple.rtx$Adhesin.num <- "z"
 
@@ -327,6 +371,22 @@ Shewanella.single <- single.rtx[ grepl( "Shewanella" , single.rtx$organism ), ]
 Vibrio.multi <- multiple.rtx[ grepl( "Vibrio" , multiple.rtx$organism ), ]
 Vibrio.single <- single.rtx[ grepl( "Vibrio" , single.rtx$organism ), ]
 
+lapdg.distribution <- data.frame(table(lapd.g.species.info.tax$subgroup), stringsAsFactors = FALSE)
+lapdg.distribution$percent <-lapdg.distribution$Freq/length(lapd.g.species.info.tax$TaxID)
+lapdg.distribution <- lapdg.distribution[order(lapdg.distribution$Freq, decreasing = TRUE),]
+lap.dist.cut <- lapdg.distribution[which(lapdg.distribution$percent > 0.01),]
+lap.dist.cut$Var1 <- as.character(lap.dist.cut$Var1)
+lap.dist.cut$Freq <- as.numeric(lap.dist.cut$Freq)
+lap.dist.cut <- rbind(lap.dist.cut, c("Other", sum(as.numeric(lapdg.distribution$Freq)) - sum(as.numeric(lap.dist.cut$Freq)), 
+                                      1 - sum(as.numeric(lap.dist.cut$percent)), "a"))
+lap.dist.cut$Var1 <- factor(lap.dist.cut$Var1,levels(c("Zetaproteobacteria", "Other", "delta/epsilon subdivisions", 
+                                                       "Alphaproteobacteria", "Betaproteobacteria", 
+                                                       "Gammaproteobacteria")), ordered = TRUE) # levels(c("Zetaproteobacteria", "Other", "delta/epsilon subdivisions", "Alphaproteobacteria", "Betaproteobacteria", "Gammaproteobacteria"),
+lap.dist.cut$Freq <- as.numeric(lap.dist.cut$Freq)
+rownames(lap.dist.cut) <- seq(length(lap.dist.cut$Var1))
+
+Adhesin.number <- data.frame(table(protein.count$Freq))
+
 ###
 ###
 ###
@@ -337,7 +397,34 @@ Vibrio.single <- single.rtx[ grepl( "Vibrio" , single.rtx$organism ), ]
 ###
 
 
-library(ggplot2);library(reshape2)
+
+library(ggplot2);library(reshape2);library(RColorBrewer)
+
+# myColors <- brewer.pal(6,"Set2")
+# names(myColors) <- levels(factor(lap.dist.cut$Var1))[c(1,2,3,4,6,5)]
+# fillScale <- scale_fill_manual(name = "Class",values = myColors)
+
+ggplot(data = Adhesin.number, aes(Var1, Freq, fill = Var1))+
+  theme_bw() + theme(panel.border = element_blank(), panel.grid.major = element_blank(), legend.position = "None",
+                     panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"))+
+  ylab("Organisms with Lap-like proteins found") +
+  xlab("Number of adhesins encoded")+
+  geom_bar(stat = "Identity")+
+  scale_y_continuous(expand = c(0,0)) + scale_fill_brewer(palette="Set2") +
+  ggsave("Output/Plots/Number of adhesins.png", width = 8, height = 8, units = "cm", dpi = 300)
+
+
+ggplot(data = lap.dist.cut, aes(1, y = Freq[order(Freq, decreasing = TRUE)], fill =                                  
+                                  factor(lap.dist.cut$Var1, 
+                                         levels =  c("Zetaproteobacteria", "Other", "delta/epsilon subdivisions",
+                                                     "Alphaproteobacteria", "Betaproteobacteria", "Gammaproteobacteria"))))+
+  theme_bw() + theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+                     panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"),
+                     axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank())+
+  ylab("Organisms with Lap-like proteins found") +
+  geom_bar(stat = "Identity")+
+  scale_y_continuous(expand = c(0,0)) + scale_fill_brewer(palette="Set2", direction = -1, name = "Class") +
+  ggsave("Output/Plots/Class_distribution.png", width = 10, height = 10, units = "cm", dpi = 300)
 
 ggplot(data = multiple.rtx, aes(protein.length, fill = 'multiple RTX')) + 
   theme_bw() + theme(panel.border = element_blank(), panel.grid.major = element_blank(),
@@ -345,14 +432,14 @@ ggplot(data = multiple.rtx, aes(protein.length, fill = 'multiple RTX')) +
   geom_density(alpha=0.25) + scale_x_continuous(limits = c(0,16500), expand = c(0, 0)) + scale_y_continuous(expand = c(0, 0)) +
   geom_density(data = single.rtx, aes(protein.length, fill = 'single RTX'), alpha=0.25) + 
   labs(title = "All substrate size distributions", x = "Protein Length", y = "Density", fill = "") 
-  ggsave("overall substrate sizes.png", width = 20, height = 10, units = "cm", dpi = 300)
+  ggsave("Output/Plots/overall substrate sizes.png", width = 20, height = 10, units = "cm", dpi = 300)
 
 ggplot(data = multiple.rtx, aes(Adhesin.num, protein.length, fill = Adhesin.num))+
   theme_bw() + theme(panel.border = element_blank(), panel.grid.major = element_blank(), legend.position="none",
                      panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
   geom_boxplot() +
   geom_jitter(aes(alpha = 0.1), color = "lightblue")+
-  ggsave("All RTX proteins boxplot by size rank in org.png")
+  ggsave("Output/Plots/All RTX proteins boxplot by size rank in org.png")
 
 
 ggplot(data = doubles, aes(biggest, ratio))+
@@ -366,7 +453,7 @@ ggplot(data = doubles, aes("a", ratio)) +
                      panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) + 
   geom_boxplot()+
   geom_jitter(aes(alpha = 0.1), color = "lightblue")+
-  ggsave("Ratios in double RTX organisms.png")
+  ggsave("Output/Plots/Ratios in double RTX organisms.png")
 
 ggplot(data = pseudomonas.multi, aes(protein.length, fill = 'multiple RTX')) + 
   theme_bw() + theme(panel.border = element_blank(), panel.grid.major = element_blank(),
@@ -375,7 +462,7 @@ ggplot(data = pseudomonas.multi, aes(protein.length, fill = 'multiple RTX')) +
   geom_density(alpha=0.25)+
   geom_density(data = pseudomonas.single, aes(protein.length, fill = 'single RTX'), alpha=0.25) + 
   labs(title = "Pseudomonas substrate size distributions", x = "Protein Length", y = "Density", fill = "") +
-  ggsave("Pseudomonas substrate sizes.png", width = 20, height = 10, units = "cm", dpi = 300)
+  ggsave("Output/Plots/Pseudomonas substrate sizes.png", width = 20, height = 10, units = "cm", dpi = 300)
 
 ggplot(data = Shewanella.multi, aes(protein.length, fill = 'multiple RTX')) + 
   theme_bw() + theme(panel.border = element_blank(), panel.grid.major = element_blank(),
@@ -384,7 +471,7 @@ ggplot(data = Shewanella.multi, aes(protein.length, fill = 'multiple RTX')) +
   geom_density(alpha=0.25)+
   geom_density(data = Shewanella.single, aes(protein.length, fill = 'single RTX'), alpha=0.25) + 
   labs(title = "Shewanella substrate size distributions", x = "Protein Length", y = "Density", fill = "")+ 
-  ggsave("Shewanella substrate sizes.png", width = 20, height = 10, units = "cm", dpi = 300)
+  ggsave("Output/Plots/Shewanella substrate sizes.png", width = 20, height = 10, units = "cm", dpi = 300)
 
 ggplot(data = Vibrio.multi, aes(protein.length, fill = 'multiple RTX')) + 
   theme_bw() + theme(panel.border = element_blank(), panel.grid.major = element_blank(),
@@ -393,4 +480,4 @@ ggplot(data = Vibrio.multi, aes(protein.length, fill = 'multiple RTX')) +
   geom_density(alpha=0.25)+
   geom_density(data = Vibrio.single, aes(protein.length, fill = 'single RTX'), alpha=0.25) + 
   labs(title = "Vibrio substrate size distributions", x = "Protein Length", y = "Density", fill = "")+ 
-  ggsave("Vibrio substrate sizes.png", width = 20, height = 10, units = "cm", dpi = 300)
+  ggsave("Output/Plots/Vibrio substrate sizes.png", width = 20, height = 10, units = "cm", dpi = 300)
